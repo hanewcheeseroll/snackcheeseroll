@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Cheeseroll Hanew</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff8f3;
+      color: #333;
+    }
+
+    .aboutDetailSection {
+      background-color: #fff8f3;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .aboutTitle {
+      font-size: 32px;
+      color: #d47d6a;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .aboutDesc {
+      max-width: 700px;
+      margin: 0 auto 40px;
+      color: #444;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .flavorTitle {
+      font-size: 24px;
+      margin-bottom: 25px;
+      color: #b85c4d;
+      font-weight: 600;
+    }
+
+    .flavorContainer {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding: 0 20px;
+    }
+
+    .flavorCard {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 280px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .flavorCard:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .flavorCard img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .flavorCard h3 {
+      color: #ff8e7b;
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .flavorCard p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .backBtnWrap {
+      margin-top: 50px;
+    }
+
+    .backBtn {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #ff8e7b;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .backBtn:hover {
+      background-color: #e06d5f;
+      transform: scale(1.05);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .flavorContainer {
+        flex-direction: column;
+        align-items: center;
+      }
+      .flavorCard {
+        width: 85%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ABOUT DETAIL PAGE -->
+  <section id="aboutDetail" class="aboutDetailSection">
+    <div class="container">
+      <h1 class="aboutTitle">Tentang Cheeseroll Hanew</h1>
+      <p class="aboutDesc">
+        Cheeseroll Hanew hadir buat kamu yang suka ngemil tapi pengen yang beda!
+  Dibuat dari keju premium dan bahan pilihan, setiap gulungan kami dipanggang sampai renyah di luar, lembut di dalam.
+  Camilan ini bukan cuma soal rasa, tapi soal mood booster yang bisa nemenin kamu di segala suasana.
+  Entah lagi nonton, nongkrong bareng teman, atau me time di rumah, Cheeseroll Hanew siap bikin harimu makin seru.
+  Pilih rasa favoritmu Cokelat, Tiramisu, atau Matcha  dan rasakan sensasi ngemil keju yang fun, creamy, dan nagih abis!
+      </p>
+
+      <h2 class="flavorTitle">Varian Rasa Favorit</h2>
+      </div>
+  <div class="aboutImg">
+  <img src="assets/varian.jpg" width="300" height="300">
+  </div>
+</section>
+
+      <div class="flavorContainer">
+        <div class="flavorCard">
+          <img src="assets/chocolate.png" alt="Cheeseroll Cokelat" />
+          <h3>Cokelat</h3>
+          <p>
+            Perpaduan sempurna antara keju dan lelehan cokelat lembut. 
+            Cocok untuk pecinta manis yang tetap ingin rasa gurih khas Cheeseroll.
+          </p>
+        </div>
+
+        <div class="flavorCard">
+          <img src="assets/tiramisu.png" alt="Cheeseroll Tiramisu" />
+          <h3>Tiramisu</h3>
+          <p>
+            Hadir dengan aroma kopi dan krim lembut, varian ini memberikan pengalaman rasa yang elegan dan nikmat di setiap suapan.
+          </p>
+        </div>
+
+        <div class="flavorCard">
+          <img src="assets/matcha.png" alt="Cheeseroll Matcha" />
+          <h3>Matcha</h3>
+          <p>
+            Kombinasi unik antara keju gurih dan teh hijau premium khas Jepang, 
+            menghasilkan cita rasa yang seimbang antara manis, pahit, dan gurih.
+          </p>
+        </div>
+      </div>
+
+      <div class="backBtnWrap">
+        <a href="index.hanew#about" class="backBtn">← Kembali ke Halaman Utama</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
