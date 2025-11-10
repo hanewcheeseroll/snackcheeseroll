@@ -161,6 +161,40 @@
       box-shadow:0 8px 20px rgba(43,31,0,0.08)
     }
 
+    /* About dengan container yang sama seperti hero */
+    .aboutSection {
+      background:var(--gold1);
+      display:flex;
+      justify-content:center;
+      padding:60px 20px;
+    }
+    .aboutContainer {
+      width:min(1100px,94%);
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:20px;
+      background:var(--gold1);
+      border-radius:10px;
+      padding:40px;
+      box-shadow:0 12px 30px rgba(0,0,0,0.05);
+    }
+    .aboutText {flex:1; max-width:520px;}
+    .aboutText h1 {font-size:42px; font-weight:900; margin-bottom:10px;}
+    .aboutText p {font-size:17px; line-height:1.6; margin-bottom:20px; color:#3b2f0b;}
+    .learnMoreBtn {
+      background:#ff6600;
+      color:#fff;
+      padding:12px 24px;
+      text-decoration:none;
+      border-radius:10px;
+      font-weight:800;
+      box-shadow:0 6px 16px rgba(255,102,0,0.2);
+      transition:opacity .2s;
+    }
+    .learnMoreBtn:hover {opacity:.9}
+    .aboutImg img {width:250px; max-width:100%; height:auto; border-radius:10px;}
+
     /* Shop */
     .shopPreview {
       max-width:1100px;
@@ -194,35 +228,6 @@
     }
     .addBtn:hover {opacity:.9}
 
-    /* About */
-    .aboutSection {
-      background:var(--gold1);
-      padding:80px 60px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      flex-wrap:wrap;
-      max-width:1100px;
-      margin:40px auto;
-      border-radius:10px;
-      gap:20px;
-    }
-    .aboutText {max-width:520px}
-    .aboutText h1 {font-size:48px;font-weight:900;color:#2b1f00;margin-bottom:10px}
-    .aboutText p {color:#3b2f0b;font-size:18px;line-height:1.5;margin-bottom:24px}
-    .learnMoreBtn {
-      background:#ff6600;
-      color:#fff;
-      padding:12px 24px;
-      text-decoration:none;
-      border-radius:10px;
-      font-weight:800;
-      box-shadow:0 6px 16px rgba(255,102,0,0.2);
-      transition:opacity .2s;
-    }
-    .learnMoreBtn:hover {opacity:.9}
-    .aboutImg img {width:280px;max-width:100%;height:auto}
-
     /* Contact & Footer */
     section.content {padding:40px 28px;max-width:1100px;margin:0 auto}
     footer {
@@ -244,8 +249,8 @@
     @media(max-width:980px){
       .heroCard {grid-template-columns:1fr}
       .shopPreview {grid-template-columns:repeat(2,1fr)}
-      .aboutSection {flex-direction:column;text-align:center}
-      .aboutImg {margin-top:20px}
+      .aboutContainer {flex-direction:column;text-align:center;padding:30px;}
+      .aboutImg {margin-top:16px;}
       .plate img {width:100%;height:auto}
     }
     @media(max-width:760px){
@@ -253,10 +258,12 @@
       .menu-toggle {display:flex;}
       .heroOuter {padding:30px 20px}
       .heroWrap {padding:40px 12px}
+      .aboutSection {padding:40px 12px;}
     }
     @media(max-width:600px){
       .titleBig {font-size:34px}
-      .aboutText h1 {font-size:36px}
+      .aboutText h1 {font-size:30px;}
+      .aboutText p {font-size:15px;}
       .shopPreview {grid-template-columns:1fr}
       footer {flex-direction:column}
     }
@@ -312,13 +319,15 @@
 
     <!-- ABOUT -->
     <section id="about" class="aboutSection">
-      <div class="aboutText">
-        <h1>ABOUT CHEESEROLL HANEW</h1>
-        <p>Cheeseroll Hanew adalah camilan keju lezat yang dibuat dari bahan-bahan berkualitas tinggi dan dipanggang hingga renyah keemasan. Kami berkomitmen memberikan rasa terbaik di setiap gigitan.</p>
-        <a href="about.hanew" class="learnMoreBtn">Learn More</a>
-      </div>
-      <div class="aboutImg">
-        <img src="assets/enakeun.logo.png" alt="Logo Hanew">
+      <div class="aboutContainer">
+        <div class="aboutText">
+          <h1>ABOUT CHEESEROLL HANEW</h1>
+          <p>Cheeseroll Hanew adalah camilan keju lezat yang dibuat dari bahan-bahan berkualitas tinggi dan dipanggang hingga renyah keemasan. Kami berkomitmen memberikan rasa terbaik di setiap gigitan.</p>
+          <a href="about.html" class="learnMoreBtn">Learn More</a>
+        </div>
+        <div class="aboutImg">
+          <img src="assets/enakeun.logo.png" alt="Logo Hanew">
+        </div>
       </div>
     </section>
 
