@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Cemilan Asik Favorit Gen Z — Beranda</title>
   <meta name="description" content="Cemilan Renyah Kekinian - Cemilan keju renyah dan lumer. Beli sekarang lewat Shopee atau pesan via WhatsApp." />
+  
   <style>
     :root {
       --gold1:#FFD54A; --gold2:#FFB300; --accent:#3b2f0b; --muted:#6b6460;
@@ -161,7 +162,7 @@
       box-shadow:0 8px 20px rgba(43,31,0,0.08)
     }
 
-    /* About dengan container yang sama seperti hero */
+    /* About */
     .aboutSection {
       background:var(--cream);
       display:flex;
@@ -192,7 +193,7 @@
       box-shadow:0 6px 16px rgba(255,102,0,0.2);
       transition:opacity .2s;
     }
-    .learnMoreBtn:hover {opacity:.9}
+
     .aboutImg img {width:250px; max-width:100%; height:auto; border-radius:10px;}
 
     /* Shop */
@@ -226,7 +227,6 @@
       text-align:center;
       transition:opacity .2s;
     }
-    .addBtn:hover {opacity:.9}
 
     /* Contact & Footer */
     section.content {padding:40px 28px;max-width:1100px;margin:0 auto}
@@ -244,32 +244,12 @@
       text-align:center;
       font-size:14px;
     }
-
-    /* RESPONSIVE */
-    @media(max-width:980px){
-      .heroCard {grid-template-columns:1fr}
-      .shopPreview {grid-template-columns:repeat(2,1fr)}
-      .aboutContainer {flex-direction:column;text-align:center;padding:30px;}
-      .aboutImg {margin-top:16px;}
-      .plate img {width:100%;height:auto}
-    }
-    @media(max-width:760px){
-      nav {display:none;} /* Hide default nav */
-      .menu-toggle {display:flex;}
-      .heroOuter {padding:30px 20px}
-      .heroWrap {padding:40px 12px}
-      .aboutSection {padding:40px 12px;}
-    }
-    @media(max-width:600px){
-      .titleBig {font-size:34px}
-      .aboutText h1 {font-size:30px;}
-      .aboutText p {font-size:15px;}
-      .shopPreview {grid-template-columns:1fr}
-      footer {flex-direction:column}
-    }
   </style>
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header>
     <div class="brand">
       <div class="logo">H</div>
@@ -279,7 +259,6 @@
       </div>
     </div>
 
-    <!-- Hamburger menu -->
     <div class="menu-toggle" id="menu-toggle">
       <span></span><span></span><span></span>
     </div>
@@ -294,6 +273,7 @@
   </header>
 
   <main>
+
     <!-- HERO -->
     <section id="home" class="heroWrap">
       <div class="heroOuter">
@@ -322,7 +302,7 @@
       <div class="aboutContainer">
         <div class="aboutText">
           <h1>ABOUT CHEESEROLL HANEW</h1>
-          <p>Cheeseroll Hanew adalah camilan keju lezat yang dibuat dari bahan-bahan berkualitas tinggi dan dipanggang hingga renyah keemasan. Kami berkomitmen memberikan rasa terbaik di setiap gigitan.</p>
+          <p>Cheeseroll Hanew adalah camilan keju lezat yang dibuat dari bahan-bahan berkualitas dan dipanggang hingga renyah keemasan. Setiap gigitan memberikan sensasi renyah dan lumer.</p>
           <a href="about.html" class="learnMoreBtn">Learn More</a>
         </div>
         <div class="aboutImg">
@@ -338,21 +318,23 @@
         <div style="font-weight:800">Cheeseroll Cokelat Lumer</div>
         <div style="color:var(--muted);font-size:18px">Renyah dan lumer, manis favourite teman ngobrol kamu.</div>
         <div class="price">Rp 10.000</div>
-        <button class="addBtn" onclick="window.open('https://id.shp.ee/oScUJNG ','_blank')">Beli di Shopee</button>
+        <button class="addBtn" onclick="window.open('https://id.shp.ee/oScUJNG','_blank')">Beli di Shopee</button>
       </article>
+
       <article class="card">
         <img src="assets/matcha.jpg" alt="Cheeseroll Matcha">
         <div style="font-weight:800">Cheeseroll Matcha</div>
-        <div style="color:var(--muted);font-size:18px">Sensasi rasa matcha kesukaan perempuan cantik.</div>
+        <div style="color:var(--muted);font-size:18px">Sensasi matcha favorit perempuan cantik.</div>
         <div class="price">Rp 10.000</div>
-        <button class="addBtn" onclick="window.open('https://id.shp.ee/AefJT3N ','_blank')">Beli di Shopee</button>
+        <button class="addBtn" onclick="window.open('https://id.shp.ee/AefJT3N','_blank')">Beli di Shopee</button>
       </article>
+
       <article class="card">
         <img src="assets/tiramisu.jpg" alt="Cheeseroll Tiramisu">
         <div style="font-weight:800">Cheeseroll Tiramisu</div>
-        <div style="color:var(--muted);font-size:18px">Aroma Tiramisu berpadu manis gurih keju.</div>
+        <div style="color:var(--muted);font-size:18px">Aroma tiramisu manis berpadu dengan gurihnya keju.</div>
         <div class="price">Rp 10.000</div>
-        <button class="addBtn" onclick="window.open('https://id.shp.ee/zF4cUBz ','_blank')">Beli di Shopee</button>
+        <button class="addBtn" onclick="window.open('https://id.shp.ee/zF4cUBz','_blank')">Beli di Shopee</button>
       </article>
     </section>
 
@@ -372,10 +354,57 @@
   <script>
     const toggle = document.getElementById('menu-toggle');
     const nav = document.getElementById('nav-menu');
-    toggle.addEventListener('click',()=>{
+    toggle.addEventListener('click', () => {
       nav.classList.toggle('active');
       toggle.classList.toggle('open');
     });
   </script>
+
+  <!-- ========================= SEO SECTION DI BAGIAN PALING BAWAH ========================= -->
+
+  <title>Cheeseroll Hanew — Cemilan Keju Renyah Lumer Kekinian</title>
+  <meta name="description" content="Cheeseroll Hanew: cemilan keju renyah di luar, lumer di dalam. Varian cokelat, tiramisu, dan matcha. Harga terjangkau, siap kirim! Beli via Shopee atau pesan lewat WhatsApp." />
+
+  <meta property="og:title" content="Cheeseroll Hanew — Cemilan Keju Renyah Kekinian" />
+  <meta property="og:description" content="Snack keju renyah favorit Gen Z! Cokelat lumer, matcha, tiramisu, semuanya renyah dan gurih. Order di Shopee atau WhatsApp." />
+  <meta property="og:image" content="assets/cheeseroll.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- SEO H1 (disembunyikan agar tidak mengganggu layout) -->
+  <h1 style="position:absolute; left:-9999px; top:-9999px;">
+    Cheeseroll Hanew — Cemilan Keju Renyah Kekinian
+  </h1>
+
+  <!-- JSON-LD PRODUK -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "name":"Katalog Produk Cheeseroll Hanew",
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"Cheeseroll Cokelat Lumer",
+        "url":"https://id.shp.ee/oScUJNG"
+      },
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"Cheeseroll Matcha",
+        "url":"https://id.shp.ee/AefJT3N"
+      },
+      {
+        "@type":"ListItem",
+        "position":3,
+        "name":"Cheeseroll Tiramisu",
+        "url":"https://id.shp.ee/zF4cUBz"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ========================= END SEO SECTION ========================= -->
+
 </body>
 </html>
